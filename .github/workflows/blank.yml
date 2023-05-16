@@ -1,0 +1,26 @@
+name: Checkout workflow 
+
+on: 
+
+  workflow_call: 
+
+  
+
+jobs: 
+
+  reusable-checkout: 
+
+    runs-on: ubuntu-latest 
+
+    steps: 
+
+    - uses: actions/checkout@v3 
+    
+    - name: make a folder 
+    
+      run: touch file1
+
+    - name: list the repo files 
+
+      run: ls 
+      
